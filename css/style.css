@@ -1,0 +1,122 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.question {
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  background: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 0.5rem;
+}
+
+.explanation {
+  display: none;
+  margin-top: 0.75rem;
+  padding: 0.75rem;
+  background: #eef5ff;
+  border-left: 4px solid #0d6efd;
+  border-radius: 0.25rem;
+}
+
+.user-correct {
+  background-color: #d1e7dd !important; /* green */
+}
+
+.user-wrong {
+  background-color: #f8d7da !important; /* red */
+}
+
+.correct-only {
+  background-color: #d1e7dd !important;
+}
+/* ===== Global ===== */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e3f2fd 0%, #ffffff 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+/* ===== Header ===== */
+.main-header {
+  background: #0d6efd;
+  color: #fff;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Split Layout ===== */
+.split {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  max-width: 1200px;
+  margin: 3rem auto;
+  background: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.left,
+.right {
+  padding: 3rem;
+}
+
+.left {
+  flex: 0 0 40%;
+  background: #e8f1ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.right {
+  flex: 0 0 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left h2 {
+  font-weight: 700;
+  color: #0d6efd;
+}
+
+.right h3 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* Buttons look better on mobile */
+.right .btn {
+  font-size: 1.1rem;
+  padding: 0.75rem;
+}
+
+/* ===== Footer ===== */
+.main-footer {
+  background: #212529;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .split {
+    flex-direction: column;
+  }
+
+  .left,
+  .right {
+    flex: 0 0 100%;
+    text-align: center;
+  }
+}
